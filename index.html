@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Servicio de Corte Textil</title>
+    <title>SILMAR | Servicio de Corte Textil Industrial</title>
     
     <link rel="icon" type="image/svg+xml" href="https://raw.githubusercontent.com/silmar-cortetextil/contacto/main/silmarmaquina.svg">
     
@@ -73,11 +73,6 @@
             height: 50px; 
             width: auto;
             display: block;
-        }
-
-        /* Estilo para volver blanca la imagen silmarmaquina si se usa dentro de contenedores oscuros */
-        .maquina-blanca {
-            filter: brightness(0) invert(1);
         }
 
         .menu a {
@@ -166,6 +161,9 @@
             color: #64748b;
             margin-bottom: 50px;
             font-size: 16px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .grid-ventajas {
@@ -234,7 +232,7 @@
         .info-servicio .icono-servicio { font-size: 24px; color: var(--color-secundario); margin-bottom: 15px; }
         .info-servicio h3 { color: var(--color-principal); margin-bottom: 12px; font-size: 20px; font-weight: 600; }
 
-        /* --- FORMULARIO --- */
+        /* --- FORMULARIO OPTIMIZADO --- */
         .contacto-seccion {
             background-color: var(--color-blanco);
             padding: 90px 0;
@@ -247,22 +245,23 @@
             background: var(--color-fondo-claro);
             padding: 45px;
             border-radius: 16px;
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.02);
+            box-shadow: 0 10px 30px rgba(15, 23, 42, 0.04);
             border: 1px solid #e2e8f0;
         }
 
         .grupo-form { margin-bottom: 22px; }
-        .grupo-form label { display: block; margin-bottom: 8px; font-weight: 500; font-size: 14px; color: var(--color-principal); }
+        .grupo-form label { display: block; margin-bottom: 8px; font-weight: 600; font-size: 14px; color: var(--color-principal); }
         
         .grupo-form input, .grupo-form select, .grupo-form textarea {
             width: 100%;
-            padding: 12px 16px;
+            padding: 14px 16px;
             border: 1px solid #cbd5e1;
             border-radius: 8px;
             font-family: var(--fuente);
             font-size: 15px;
             background-color: var(--color-blanco);
             transition: var(--transicion);
+            color: var(--color-texto);
         }
 
         .grupo-form input:focus, .grupo-form select:focus, .grupo-form textarea:focus {
@@ -273,20 +272,22 @@
 
         .btn-enviar {
             width: 100%;
-            background-color: var(--color-principal);
+            background-color: var(--color-secundario);
             color: var(--color-blanco);
-            padding: 14px;
+            padding: 16px;
             border: none;
             border-radius: 8px;
             font-size: 16px;
             font-weight: 600;
             cursor: pointer;
+            box-shadow: 0 4px 12px rgba(2, 132, 199, 0.2);
             transition: var(--transicion);
         }
 
         .btn-enviar:hover {
-            background-color: var(--color-secundario);
+            background-color: #0369a1;
             transform: translateY(-1px);
+            box-shadow: 0 6px 15px rgba(2, 132, 199, 0.3);
         }
 
         /* --- WHATSAPP --- */
@@ -340,8 +341,8 @@
             </a>
             <nav class="menu">
                 <a href="#ventajas">Por qué elegirnos</a>
-                <a href="#servicios">Servicios</a>
-                <a href="#presupuesto">Presupuesto</a>
+                <a href="#servicios">Etapas de Corte</a>
+                <a href="#presupuesto">Cotización</a>
             </nav>
         </div>
     </header>
@@ -349,30 +350,30 @@
     <section class="hero">
         <div class="contenedor">
             <h1>Corte Textil a Medida: Precisión Sin Desperdicios</h1>
-            <p>Optimizamos digitalmente tus telas y patrones para ofrecerte cortes exactos. Nos adaptamos a tus volúmenes de producción con entregas rápidas y atención personalizada.</p>
-            <a href="#presupuesto" class="btn-principal">Solicitar Presupuesto Especializado</a>
+            <p>Optimizamos el tizado y extendido industrial para garantizar piezas impecables. Nos adaptamos a tus volúmenes de producción con entregas rápidas y atención personalizada.</p>
+            <a href="#presupuesto" class="btn-principal">Solicitar Cotización de Corte</a>
         </div>
     </section>
 
     <section id="ventajas" class="ventajas">
         <div class="contenedor">
-            <h2 class="titulo-seccion">Nuestra Flexibilidad es Tu Ventaja</h2>
-            <p class="subtitulo-seccion">Tecnología y atención al detalle para optimizar tus costes de producción.</p>
+            <h2 class="titulo-seccion">Especialistas en Rendimiento de Tela</h2>
+            <p class="subtitulo-seccion">Nos adaptamos a tus volúmenes de producción con entregas rápidas y atención personalizada, maximizando el ahorro de tu materia prima.</p>
             <div class="grid-ventajas">
                 <div class="tarjeta-ventaja">
                     <div class="icono-ventaja"><i class="fas fa-layer-group"></i></div>
-                    <h3>Sin Mínimos Abusivos</h3>
-                    <p>No necesitas producir miles de piezas para trabajar con nosotros. Nos adaptamos tanto a pequeñas colecciones independientes como a series industriales medianas.</p>
+                    <h3>Volúmenes Flexibles</h3>
+                    <p>Atendemos producciones medianas y grandes series industriales, adaptando nuestras mesas al volumen específico de tus tendidos sin restricciones estrictas.</p>
                 </div>
                 <div class="tarjeta-ventaja">
                     <div class="icono-ventaja"><i class="fas fa-calculator"></i></div>
                     <h3>Máximo Aprovechamiento</h3>
-                    <p>Utilizamos software avanzado de marcada digital. Distribuimos los patrones milimétricamente para que aproveches cada centímetro de tu tela y reduzcas costes.</p>
+                    <p>Implementamos sistemas digitales avanzados para distribuir los moldes de forma milimétrica. Reducimos al mínimo los saldos de tela optimizando cada tizada.</p>
                 </div>
                 <div class="tarjeta-ventaja">
                     <div class="icono-ventaja"><i class="fas fa-comments"></i></div>
-                    <h3>Comunicación Directa</h3>
-                    <p>Aquí no eres un número de pedido más. Resolvemos tus dudas en tiempo real y te asesoramos sobre el mejor método de extendido según el tipo de tejido.</p>
+                    <h3>Control y Asesoría Técnica</h3>
+                    <p>Evaluamos tus telas previamente para definir el mejor método de extendido y reposo según la elasticidad o el tipo de tejido plano o de punto.</p>
                 </div>
             </div>
         </div>
@@ -380,28 +381,28 @@
 
     <section id="servicios" class="servicios">
         <div class="contenedor">
-            <h2 class="titulo-seccion" style="text-align: center;">Soluciones de Corte Textil</h2>
-            <p class="subtitulo-seccion" style="text-align: center;">Procesos optimizados para marcas exigentes.</p>
+            <h2 class="titulo-seccion" style="text-align: center;">Proceso Técnico de Corte</h2>
+            <p class="subtitulo-seccion" style="text-align: center;">Garantizamos simetría absoluta en cada pieza cortada.</p>
             <div class="grid-servicios">
                 <div class="tarjeta-servicio">
                     <div class="info-servicio">
-                        <div class="icono-servicio"><i class="fas fa-laptop-code"></i></div>
-                        <h3>Corte Automático y Digitalizado</h3>
-                        <p>Ideal para tejidos planos y de punto. Digitalizamos tus patrones físicos o procesamos tus archivos digitales para asegurar un corte limpio, rápido y perfectamente escalado.</p>
+                        <div class="icono-servicio"><i class="fas fa-scissors"></i></div>
+                        <h3>Extendido y Reposo Técnico</h3>
+                        <p>Preparamos el material controlando rigurosamente la tensión del tejido. Fase clave para evitar encogimientos y asegurar que todas las capas mantengan la misma medida final.</p>
                     </div>
                 </div>
                 <div class="tarjeta-servicio">
                     <div class="info-servicio">
-                        <div class="icono-servicio"><i class="fas fa-scissors"></i></div>
-                        <h3>Extendido y Preparation de Marcadas</h3>
-                        <p>Preparamos el tejido meticulosamente controlando la tensión de la tela. Es el paso crucial para garantizar que todas las piezas cortadas mantengan exactamente la misma caída y medida.</p>
+                        <div class="icono-servicio"><i class="fas fa-laptop-code"></i></div>
+                        <h3>Tizado y Marcada Digital</h3>
+                        <p>Procesamos tus archivos o moldes digitales para generar marcas de alta eficiencia. Ubicamos las piezas respetando los hilos de la tela para un armado posterior impecable.</p>
                     </div>
                 </div>
                 <div class="tarjeta-servicio">
                     <div class="info-servicio">
                         <div class="icono-servicio"><i class="fas fa-shirt"></i></div>
-                        <h3>Desarrollo de Muestras y Series Cortas</h3>
-                        <p>¿Estás lanzando un nuevo modelo o prototipo? Cortamos tus muestras con precisión quirúrgica para que puedas validar tus diseños antes de la producción final.</p>
+                        <h3>Corte y Habilitado en Bloque</h3>
+                        <p>Ejecutamos un corte limpio con maquinaria especializada de alta velocidad. Entregamos los paquetes habilitados y listos para ser derivados directamente a costura o estampado.</p>
                     </div>
                 </div>
             </div>
@@ -410,41 +411,43 @@
 
     <section id="presupuesto" class="contacto-seccion">
         <div class="contenedor">
-            <h2 class="titulo-seccion" style="text-align: center;">Cuéntanos tu Proyecto Textil</h2>
+            <h2 class="titulo-seccion" style="text-align: center;">Cotiza tu Servicio de Corte</h2>
+            <p class="subtitulo-seccion" style="text-align: center;">Envíanos las especificaciones de tu lote para enviarte un presupuesto a medida.</p>
+            
             <form action="https://formspree.io/f/xykqwjlj" method="POST" class="formulario-presupuesto">
                 <div class="grupo-form">
-                    <label for="nombre">Nombre o Empresa:</label>
-                    <input type="text" id="nombre" name="nombre" placeholder="Ej. Modas S.A. o Tu Nombre" required>
+                    <label for="nombre">Nombre Completo o Empresa:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ej. Corporación Textil o Tu Nombre" required>
                 </div>
                 <div class="grupo-form">
-                    <label for="email">Correo Electrónico:</label>
+                    <label for="email">Correo Electrónico de Contacto:</label>
                     <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
                 </div>
                 <div class="grupo-form">
-                    <label for="tejido">Tipo de Tejido Principal:</label>
+                    <label for="tejido">Tipo de Tela a Cortar:</label>
                     <select id="tejido" name="tejido">
-                        <option value="plana">Tejido Plano (Sarga, Algodón, Lino...)</option>
-                        <option value="punto">Tejido de Punto / Elásticos</option>
-                        <option value="tecnico">Tejidos Técnicos o Especiales</option>
-                        <option value="otro">Otro / No estoy seguro</option>
+                        <option value="plana">Tejido Plano (Denim, Sarga, Algodón, Lino...)</option>
+                        <option value="punto">Tejido de Punto (Jersey, Felpa, Rib, Piqué...)</option>
+                        <option value="tecnico">Telas Técnicas, Sintéticas o Impermeables</option>
+                        <option value="otro">Otro tipo de material</option>
                     </select>
                 </div>
                 <div class="grupo-form">
-                    <label for="volumen">Volumen o Metros Estimados:</label>
-                    <input type="text" id="volumen" name="volumen" placeholder="Ej. 150 metros / 300 prendas">
+                    <label for="volumen">Cantidad Estimada (Prendas o Metros):</label>
+                    <input type="text" id="volumen" name="volumen" placeholder="Ej. 500 prendas / 3 rollos de tela" required>
                 </div>
                 <div class="grupo-form">
-                    <label for="patrones">¿Dispones de patrones digitales?</label>
+                    <label for="patrones">¿Dispones de moldes digitales?</label>
                     <select id="patrones" name="patrones">
-                        <option value="si">Sí, en formato digital (DXF, Gerber, etc.)</option>
-                        <option value="no">No, los tengo en físico / Necesito digitalizarlos</option>
+                        <option value="si">Sí, en formato digital (DXF, Gerber, Lectra, etc.)</option>
+                        <option value="no">No, tengo moldes en físico</option>
                     </select>
                 </div>
                 <div class="grupo-form">
-                    <label for="detalles">Detalles Adicionales del Trabajo:</label>
-                    <textarea id="detalles" name="detalles" rows="4" placeholder="Describe brevemente lo que necesitas cortar..."></textarea>
+                    <label for="detalles">Especificaciones Adicionales del Pedido:</label>
+                    <textarea id="detalles" name="detalles" rows="4" placeholder="Indica detalles como cantidad de tallas, si la tela es listada/cuadros, o requerimientos específicos del tendido..."></textarea>
                 </div>
-                <button type="submit" class="btn-enviar">Enviar Solicitud de Presupuesto</button>
+                <button type="submit" class="btn-enviar">Enviar Solicitud de Cotización</button>
             </form>
         </div>
     </section>
@@ -452,7 +455,7 @@
     <footer>
         <div class="contenedor">
             <p>&copy; 2026 SILMAR. Todos los derechos reservados.</p>
-            <p>Servicios de Corte Industrial y a Medida para la Industria Textil.</p>
+            <p>Servicios Especializados de Corte Textil Industrial.</p>
         </div>
     </footer>
 
