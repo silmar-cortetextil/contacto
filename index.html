@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios de Corte Textil Profesional | Precisión y Flexibilidad</title>
+    <style>
+        :root {
+            --color-principal: #1e293b;
+            --color-secundario: #0284c7;
+            --color-fondo-claro: #f8fafc;
+            --color-texto: #334155;
+            --color-blanco: #ffffff;
+            --fuente: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--fuente);
+            color: var(--color-texto);
+            line-height: 1.6;
+            background-color: var(--color-fondo-claro);
+        }
+
+        .contenedor {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            background-color: var(--color-blanco);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--color-principal);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .logo span {
+            color: var(--color-secundario);
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: var(--color-texto);
+            margin-left: 20px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .menu a:hover {
+            color: var(--color-secundario);
+        }
+
+        .hero {
+            background: linear-gradient(135deg, rgba(30, 41, 59, 0.95), rgba(15, 23, 42, 0.9)), url('https://images.unsplash.com/photo-1558769132-cb1aea458c5e?q=80&w=1200') no-repeat center center/cover;
+            color: var(--color-blanco);
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .hero p {
+            font-size: 18px;
+            max-width: 700px;
+            margin: 0 auto 30px auto;
+            color: #cbd5e1;
+        }
+
+        .btn-principal {
+            display: inline-block;
+            background-color: var(--color-secundario);
+            color: var(--color-blanco);
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .btn-principal:hover {
+            background-color: #0369a1;
+        }
+
+        .ventajas {
+            padding: 80px 0;
+            background-color: var(--color-blanco);
+            text-align: center;
+        }
+
+        .titulo-seccion {
+            font-size: 32px;
+            color: var(--color-principal);
+            margin-bottom: 40px;
+        }
+
+        .grid-ventajas {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .tarjeta-ventaja {
+            padding: 30px;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .tarjeta-ventaja:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0,0,0,0.05);
+        }
+
+        .tarjeta-ventaja h3 {
+            color: var(--color-principal);
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+
+        .servicios {
+            padding: 80px 0;
+        }
+
+        .grid-servicios {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+        }
+
+        .tarjeta-servicio {
+            background: var(--color-blanco);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+        }
+
+        .info-servicio {
+            padding: 25px;
+        }
+
+        .info-servicio h3 {
+            color: var(--color-principal);
+            margin-bottom: 10px;
+        }
+
+        .contacto-seccion {
+            background-color: var(--color-blanco);
+            padding: 80px 0;
+        }
+
+        .formulario-presupuesto {
+            max-width: 600px;
+            margin: 0 auto;
+            background: var(--color-fondo-claro);
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+
+        .grupo-form {
+            margin-bottom: 20px;
+        }
+
+        .grupo-form label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: var(--color-principal);
+        }
+
+        .grupo-form input, 
+        .grupo-form select, 
+        .grupo-form textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #cbd5e1;
+            border-radius: 5px;
+            font-family: var(--fuente);
+            font-size: 15px;
+        }
+
+        .btn-enviar {
+            width: 100%;
+            background-color: var(--color-principal);
+            color: var(--color-blanco);
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .btn-enviar:hover {
+            background-color: var(--color-secundario);
+        }
+
+        footer {
+            background-color: var(--color-principal);
+            color: #94a3b8;
+            padding: 40px 0;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        footer p {
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .nav-bar {
+                flex-direction: column;
+                gap: 15px;
+            }
+            .menu a {
+                margin: 0 10px;
+            }
+            .hero h1 {
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="contenedor nav-bar">
+            <div class="logo">SILMAR<span>CORTE</span></div>
+            <nav class="menu">
+                <a href="#ventajas">Por qué elegirnos</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#presupuesto">Presupuesto</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="contenedor">
+            <h1>Corte Textil a Medida: Precisión Sin Desperdicios</h1>
+            <p>Optimizamos digitalmente tus telas y patrones para ofrecerte cortes exactos. Nos adaptamos a tus volúmenes de producción con entregas rápidas y atención personalizada.</p>
+            <a href="#presupuesto" class="btn-principal">Solicitar Presupuesto Especializado</a>
+        </div>
+    </section>
+
+    <section id="ventajas" class="ventajas">
+        <div class="contenedor">
+            <h2 class="titulo-seccion">Nuestra Flexibilidad es Tu Ventaja</h2>
+            <div class="grid-ventajas">
+                <div class="tarjeta-ventaja">
+                    <h3>Sin Mínimos Abusivos</h3>
+                    <p>No necesitas producir miles de piezas para trabajar con nosotros. Nos adaptamos tanto a pequeñas colecciones independientes como a series industriales medianas.</p>
+                </div>
+                <div class="tarjeta-ventaja">
+                    <h3>Máximo Aprovechamiento</h3>
+                    <p>Utilizamos software avanzado de marcada digital. Distribuimos los patrones milimétricamente para que aproveches cada centímetro de tu tela y reduzcas costes.</p>
+                </div>
+                <div class="tarjeta-ventaja">
+                    <h3>Comunicación Directa</h3>
+                    <p>Aquí no eres un número de pedido más. Resolvemos tus dudas en tiempo real y te asesoramos sobre el mejor método de extendido según el tipo de tejido.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicios" class="servicios">
+        <div class="contenedor">
+            <h2 class="titulo-seccion" style="text-align: center;">Soluciones de Corte Textil</h2>
+            <div class="grid-servicios">
+                <div class="tarjeta-servicio">
+                    <div class="info-servicio">
+                        <h3>Corte Automático y Digitalizado</h3>
+                        <p>Ideal para tejidos planos y de punto. Digitalizamos tus patrones físicos o procesamos tus archivos digitales para asegurar un corte limpio, rápido y perfectamente escalado.</p>
+                    </div>
+                </div>
+                <div class="tarjeta-servicio">
+                    <div class="info-servicio">
+                        <h3>Extendido y Preparación de Marcadas</h3>
+                        <p>Preparamos el tejido meticulosamente controlando la tensión de la tela. Es el paso crucial para garantizar que todas las piezas cortadas mantengan exactamente la misma caída y medida.</p>
+                    </div>
+                </div>
+                <div class="tarjeta-servicio">
+                    <div class="info-servicio">
+                        <h3>Desarrollo de Muestras y Series Cortas</h3>
+                        <p>¿Estás lanzando un nuevo modelo o prototipo? Cortamos tus muestras con precisión quirúrgica para que puedas validar tus diseños antes de la producción final.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="presupuesto" class="contacto-seccion">
+        <div class="contenedor">
+            <h2 class="titulo-seccion" style="text-align: center;">Cuéntanos tu Proyecto Textil</h2>
+            <p style="text-align: center; max-width: 600px; margin: -20px auto 40px auto; color: var(--color-texto);">
+                Completa los detalles básicos y te responderemos con una propuesta optimizada para tus necesidades de producción.
+            </p>
+            
+            <form action="https://formspree.io/f/xykqwjlj" method="POST" class="formulario-presupuesto">
+                <div class="grupo-form">
+                    <label for="nombre">Nombre o Empresa:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ej. Modas S.A. o Tu Nombre" required>
+                </div>
+                
+                <div class="grupo-form">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+                </div>
+                
+                <div class="grupo-form">
+                    <label for="tejido">Tipo de Tejido Principal:</label>
+                    <select id="tejido" name="tejido">
+                        <option value="plana">Tejido Plano (Sarga, Algodón, Lino...)</option>
+                        <option value="punto">Tejido de Punto / Elásticos</option>
+                        <option value="tecnico">Tejidos Técnicos o Especiales</option>
+                        <option value="otro">Otro / No estoy seguro</option>
+                    </select>
+                </div>
+                
+                <div class="grupo-form">
+                    <label for="volumen">Volumen o Metros Estimados:</label>
+                    <input type="text" id="volumen" name="volumen" placeholder="Ej. 150 metros / 300 prendas">
+                </div>
+
+                <div class="grupo-form">
+                    <label for="patrones">¿Dispones de patrones digitales?</label>
+                    <select id="patrones" name="patrones">
+                        <option value="si">Sí, en formato digital (DXF, Gerber, etc.)</option>
+                        <option value="no">No, los tengo en físico / Necesito digitalizarlos</option>
+                    </select>
+                </div>
+                
+                <div class="grupo-form">
+                    <label for="detalles">Detalles Adicionales del Trabajo:</label>
+                    <textarea id="detalles" name="detalles" rows="4" placeholder="Describe brevemente lo que necesitas cortar (camisas, fundas, ropa deportiva...)"></textarea>
+                </div>
+                
+                <button type="submit" class="btn-enviar">Enviar Solicitud de Presupuesto</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="contenedor">
+            <p>&copy; 2026 SILMARCORTE. Todos los derechos reservados.</p>
+            <p>Servicios de Corte Industrial y a Medida para la Industria Textil.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
