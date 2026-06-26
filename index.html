@@ -69,11 +69,15 @@
             text-decoration: none;
         }
 
-        /* Ajustado el tamaño para que tu logo SVG luzca excelente */
         .logo-img {
             height: 50px; 
             width: auto;
             display: block;
+        }
+
+        /* Estilo para volver blanca la imagen silmarmaquina si se usa dentro de contenedores oscuros */
+        .maquina-blanca {
+            filter: brightness(0) invert(1);
         }
 
         .menu a {
@@ -101,12 +105,12 @@
         .menu a:hover { color: var(--color-secundario); }
         .menu a:hover::after { width: 100%; }
 
-        /* --- HERO SECCIÓN (REDISEÑADO SIN IMAGEN CENTRAL) --- */
+        /* --- HERO SECCIÓN --- */
         .hero {
             background: linear-gradient(135deg, rgba(15, 23, 42, 0.95), rgba(30, 41, 59, 0.85)), 
                         url('https://images.unsplash.com/photo-1558769132-cb1aea458c5e?q=80&w=1200') no-repeat center center/cover;
             color: var(--color-blanco);
-            padding: 120px 0; /* Un poco más de espacio al quitar la imagen */
+            padding: 120px 0; 
             text-align: center;
         }
 
@@ -332,7 +336,7 @@
     <header>
         <div class="contenedor nav-bar">
             <a href="#" class="logo-contenedor">
-                <img src="silmarlogo.svg" alt="Logo SILMAR" class="logo-img">
+                <img src="https://raw.githubusercontent.com/silmar-cortetextil/contacto/main/silmarlogo.svg" alt="Logo SILMAR" class="logo-img">
             </a>
             <nav class="menu">
                 <a href="#ventajas">Por qué elegirnos</a>
@@ -389,7 +393,7 @@
                 <div class="tarjeta-servicio">
                     <div class="info-servicio">
                         <div class="icono-servicio"><i class="fas fa-scissors"></i></div>
-                        <h3>Extendido y Preparación de Marcadas</h3>
+                        <h3>Extendido y Preparation de Marcadas</h3>
                         <p>Preparamos el tejido meticulosamente controlando la tensión de la tela. Es el paso crucial para garantizar que todas las piezas cortadas mantengan exactamente la misma caída y medida.</p>
                     </div>
                 </div>
